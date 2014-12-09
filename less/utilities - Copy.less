@@ -1,0 +1,184 @@
+//
+// Utility classes
+// --------------------------------------------------
+
+
+// Floats
+// -------------------------
+
+.clearfix {
+  .clearfix();
+}
+.center-block {
+  .center-block();
+}
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+
+
+// Toggling content
+// -------------------------
+
+// Note: Deprecated .hide in favor of .hidden or .sr-only (as appropriate) in v3.0.1
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+.invisible {
+  visibility: hidden;
+}
+.text-hide {
+  .text-hide();
+}
+
+
+// Hide from screenreaders and browsers
+//
+// Credit: HTML5 Boilerplate
+
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+
+// For Affix plugin
+// -------------------------
+
+.affix {
+  position: fixed;
+  .translate3d(0, 0, 0);
+}
+
+
+
+
+.main-logo img{
+  width: 250px;
+margin: 20px auto;
+display: block;
+}
+
+
+
+
+
+@font-face {
+  font-family: 'Archivo Narrow';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Archivo Narrow Regular'), local('ArchivoNarrow-Regular'), url(../fonts/ArchivoNarrow/ArchivoNarrow-Regular.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+
+@font-face {
+  font-family: 'Archivo Narrow';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Archivo Narrow Bold'), local('ArchivoNarrow-Bold'), url(../fonts/ArchivoNarrow/ArchivoNarrow-Regular-Bold.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: 'Archivo Narrow';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Archivo Narrow Italic'), local('ArchivoNarrow-Italic'), url(../fonts/ArchivoNarrow/ArchivoNarrow-Italic.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+
+body{
+  background: #fff;
+  font-family: 'Archivo Narrow', sans-serif;
+  overflow-x: hidden;
+  background-size: cover;
+}
+
+/*
+* main Navigation
+*/
+.nav-content{
+  margin-bottom: 20px;
+  a{
+    line-height: 30px;
+    padding: 10px 20px;
+
+  }
+}
+
+/*
+* Main content arya
+*/
+.page-inner{
+  border: 10px solid #fff;
+  overflow: hidden;
+  min-height: 500px;
+  background-position: center;
+}
+
+   .homcorosalWraper{
+        width: 2400px;
+        position: relative;
+        left: 50%;
+        margin-left: -1200px;
+    }
+    .homcorosalMargin{
+        overflow-x: hidden;
+    }
+
+    .owl-item{
+        transition: filter 2s ease;
+        transition: grayscale 2s ease;
+        transition: opacity 2s ease;
+
+        img{
+          width: 800px;
+          height: 600px;
+        }
+    }
+ 
+
+   .owl-item,.owl-item.active + .active + .active{
+-webkit-filter: blur(10px) grayscale(1);
+  -moz-filter: blur(10px) grayscale(1);
+  -o-filter: blur(10px) grayscale(1);
+  -ms-filter: blur(10px) grayscale(1);
+  filter: blur(10px) grayscale(1);
+  opacity: 0.5;
+    }
+    .owl-item.active + .active{
+    -webkit-filter: blur(0) grayscale(0);
+    -moz-filter: blur(0) grayscale(0);
+    -o-filter: blur(0) grayscale(0);
+    -ms-filter: blur(0) grayscale(0);
+    filter: blur(0) grayscale(0);
+  opacity: 1;
+    }
+.owl-carousel h2{
+    margin-bottom: 0;
+}
+.owl-theme .owl-controls{
+    margin-top: 20px;
+}
+
+.owl-item figcaption{
+    display: none;
+}
+.owl-item.active.center figcaption{
+    display: block;
+}
+
+
+
+
+
+
+
