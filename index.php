@@ -1,7 +1,7 @@
 <?php
 include_once "template/head.php";
 ?>
-<div id="backgroundImg" style="background-image: url(img/1a.jpg);"></div>
+<div class="" id="backgroundImg" style="background-image: url(img/1a.jpg);"></div>
             <div class="homcorosalWraper">
 
                 <section id="homeCorosal" class="owl-carousel owl-theme text-center">

@@ -283,30 +283,6 @@ include_once "template/head.php";
 
 
 
-<style>
-    .cat-title{
-        margin-bottom: 50px;
-        border-bottom: 1px solid;
-        padding-bottom: 20px;
-    }
-    .thumbnail figcaption .disc{
-        background: #000;
-        color: #fff;
-    }
-    .item-focus .thumbnail img{
-        /*width: 75%;*/
-        /*float: left;*/
-        /*position: relative;*/
-
-        -webkit-filter: grayscale(0);
-        -moz-filter: grayscale(0);
-        -o-filter: grayscale(0);
-        -ms-filter: grayscale(0);
-        filter: grayscale(0);
-    }
-
-
-</style>
 
 <script>
     $(function() {
@@ -314,27 +290,12 @@ include_once "template/head.php";
         var gridItem = $('.grid-item');
         var imageGridPopUp = $('#imageGridPopUp');
 
-//        gridItem.on('click', function(evant){
-//            evant.preventDefault();
-////            debugger;
-//            gridItems.find('.item-focus').removeClass('item-focus');
-//            $(this).addClass('item-focus');
-//        })
-
-//        $('#imageGridPopUp .grid-item').on('show.bs.modal', function (event) {
-//            var button = $(event.relatedTarget) // Button that triggered the modal
-//            var recipient = button.data('whatever') // Extract info from data-* attributes
-//            // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-//            // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-//            var modal = $(this)
-//        })
 
         gridItem.on('click', function(evant){
             evant.preventDefault();
 
             imageGridPopUp.find('.modal-content').html($(this).clone()).end().modal('show');
-//            gridItems.find('.item-focus').removeClass('item-focus');
-//            $(this).addClass('item-focus');
+
         })
 
 
